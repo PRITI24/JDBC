@@ -8,6 +8,7 @@ public class jdbcc {
 	public static final String password="Priti@2000";
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
+		@SuppressWarnings("resource")				//added because of resource leak as scanner not closed
 		Scanner sc=new Scanner(System.in);
 		Connection con=null;
 		String query="";
